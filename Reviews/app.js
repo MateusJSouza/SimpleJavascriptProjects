@@ -48,14 +48,43 @@ const prevBtn = document.querySelector('.prev-btn')
 const nextBtn = document.querySelector('.next-btn')
 const randomBtn = document.querySelector('.random-btn')
 
-// setando itens iniciais
+// setando item inicial
 let currentItem = 0;
 
 // carregar item inicial -> DOMContentLoaded
 window.addEventListener('DOMContentLoaded', () => {
+  showPerson()
+})
+
+// mostrando pessoa baseado no item 
+function showPerson() {
   const item = reviews[currentItem]
   img.src = item.img
   author.textContent = item.name
   job.textContent = item.job
   info.textContent = item.text
+}
+
+// mostrar a próxima pessoa
+nextBtn.addEventListener('click', () => {
+  currentItem++
+  if (currentItem > reviews.length - 1) {
+    currentItem = 0;
+  }
+  showPerson()
+})
+
+// mostrar a pessoa anterior
+prevBtn.addEventListener('click', () => {
+  currentItem--
+  if (currentItem < 0) {
+    currentItem = reviews.length - 1;
+  }
+  showPerson()
+})
+
+// mostrar pessoa aleatória
+randomBtn.addEventListener('click', () => {
+  currentItem = Math.floor(Math.random() * reviews.length)
+  showPerson()
 })
