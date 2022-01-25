@@ -1,8 +1,8 @@
 // classList -> mostrar/pegar todas as classes
 // contains -> checar a lista de classes para uma classe específica
-//  add -> adicionar classe
-// remove - remover classe
 // toggle -> alternar classe
+// add -> adicionar classe
+// remove - remover classe
 
 const navToggle = document.querySelector('.nav-toggle')
 const links = document.querySelector('.links')
