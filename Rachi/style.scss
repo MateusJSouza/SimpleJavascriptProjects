@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+
+  .navbar {
+    ul {
+      list-style: none;
+      list-style-type: none;
+    }
+  }
+}

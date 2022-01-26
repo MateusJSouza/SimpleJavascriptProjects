@@ -1,0 +1,139 @@
+:root {
+  --button: #FF0000;
+  --main-background:  #C4C4C4;
+  --background: #E5E5E5;
+  --text: #000;
+  --footer: #000;
+  --text-description: #9C9696;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+button {
+  background: --button;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.container {
+  height: 100vh;
+}
+
+.container .menu {
+  margin-top: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .menu img {
+  width: 52px;
+  height: 36px;
+}
+
+.container .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  gap: 90px;
+}
+
+.container .menu ul li {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.container .allContent {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.container .allContent .content-one {
+  width: 357px;
+  height: 553px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .allContent .content-one p {
+  font-weight: 700;
+}
+
+.container .allContent .content-one p:first-child {
+  font-size: 60px;
+  width: 357px;
+}
+
+.container .allContent .content-one span {
+  margin-top: 21px;
+  font-size: 16px;
+  color: var(--text-description);
+  font-weight: 700;
+  width: 342px;
+}
+
+.container .allContent .content-one #price {
+  text-align: left;
+  margin-top: 30px;
+  font-size: 40px;
+  width: 220px;
+}
+
+.container .allContent .content-one button {
+  color: #ffffff;
+  background: var(--button);
+  border: 0;
+  width: 274px;
+  margin-top: 30px;
+  padding: 33px 79px 33px 75px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container .allContent .content-two {
+  width: 900px;
+  height: 914px;
+  background: var(--main-background);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */
