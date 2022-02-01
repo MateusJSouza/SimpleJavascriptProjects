@@ -42,9 +42,21 @@ button:hover {
       justify-content: space-around;
 }
 
-.container .menu img {
+.container .menu input {
+  border: 1px;
+  width: 220px;
+  height: 45px;
+  border-color: #9C9696;
+}
+
+.container .menu .logo {
   width: 52px;
   height: 36px;
+}
+
+.container .menu .marketplace {
+  width: 34px;
+  height: 34px;
 }
 
 .container .menu ul {
